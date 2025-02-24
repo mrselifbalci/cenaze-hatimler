@@ -257,7 +257,7 @@ const Cuzler: React.FC = () => {
         ))}
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           gap: 1,
@@ -297,8 +297,8 @@ const Cuzler: React.FC = () => {
             Hatim {num}
           </Button>
         ))}
-      </Box>
-      <Box
+      </Box> */}
+      {/* <Box
         sx={{
           display: "flex",
           gap: 1,
@@ -338,7 +338,7 @@ const Cuzler: React.FC = () => {
             Hatim {num}
           </Button>
         ))}
-      </Box>
+      </Box> */}
       {/* List of Cuzlers */}
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
         {filteredCuzlers.map((item) => (
