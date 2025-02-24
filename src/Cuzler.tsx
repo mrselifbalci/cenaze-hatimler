@@ -56,7 +56,7 @@ const Cuzler: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://ihya-2025-be0afcce5189.herokuapp.com/cuzlers`
+          `https://ihya-2025-be0afcce5189.herokuapp.com/cenazecuzlers`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
