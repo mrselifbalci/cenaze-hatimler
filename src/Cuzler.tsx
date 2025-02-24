@@ -58,6 +58,7 @@ const Cuzler: React.FC = () => {
         const response = await fetch(
           `https://ihya-2025-be0afcce5189.herokuapp.com/cenazecuzlers`
         );
+        console.log(response);
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -69,7 +70,7 @@ const Cuzler: React.FC = () => {
         );
 
         setCuzlers(sortedData);
-        filterByHatim(17, sortedData);
+        filterByHatim(1, sortedData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -99,7 +100,7 @@ const Cuzler: React.FC = () => {
 
     try {
       const response = await fetch(
-        `https://ihya-2025-be0afcce5189.herokuapp.com/cuzlers/${id}`,
+        `https://ihya-2025-be0afcce5189.herokuapp.com/cenazecuzlers/${id}`,
         {
           method: "PATCH",
           headers: {
